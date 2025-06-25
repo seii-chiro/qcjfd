@@ -1262,7 +1262,7 @@ const SummaryCount = () => {
                       </tr>
                       <tr>
                         <td className="px-6 py-2 whitespace-nowrap">
-                          LGBTQ + TRANSGENDER
+                          TRANSGENDER
                         </td>
                         <td className="px-6 py-2 whitespace-nowrap">
                           {transgenderVisitorCount}
@@ -1335,7 +1335,7 @@ const SummaryCount = () => {
                       </tr>
                       <tr>
                         <td className="px-6 py-2 whitespace-nowrap">
-                          LGBTQ + TRANSGENDER
+                          TRANSGENDER
                         </td>
                         <td className="px-6 py-2 whitespace-nowrap">
                           {transgenderCount}
