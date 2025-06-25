@@ -131,12 +131,12 @@ const DashboardSummary = () => {
         const genderData = [
             { "PDL Count Based on Gender": "", "Total": "" },
             { "PDL Count Based on Gender": "Female", "Total": summarydata?.success?.pdls_based_on_gender?.Active?.Female || 0 },
-            { "PDL Count Based on Gender": "Lesbian", "Total": summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQ + LESBIAN / BISEXUAL"] || 0 },
-            { "PDL Count Based on Gender": "Transgender", "Total": summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQ + TRANSGENDER"] || 0 },
+            { "PDL Count Based on Gender": "LGBTQIA+", "Total": summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQIA+"] || 0 },
+            { "PDL Count Based on Gender": "Transgender", "Total": summarydata?.success?.pdls_based_on_gender?.Active?.["TRANSGENDER"] || 0 },
             { "PDL Count Based on Gender": "Total", "Total": (
                 (summarydata?.success?.pdls_based_on_gender?.Active?.Female || 0) +
-                (summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQ + LESBIAN / BISEXUAL"] || 0) +
-                (summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQ + TRANSGENDER"] || 0)
+                (summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQIA+"] || 0) +
+                (summarydata?.success?.pdls_based_on_gender?.Active?.["TRANSGENDER"] || 0)
             ) }
         ];
 
@@ -258,12 +258,12 @@ const DashboardSummary = () => {
         const genderBody = [
             ["PDL Count Based on Gender", "Total"],
             ["Female", summarydata?.success?.pdls_based_on_gender?.Active?.Female || 0],
-            ["Lesbian", summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQ + LESBIAN / BISEXUAL"] || 0],
-            ["Transgender", summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQ + TRANSGENDER"] || 0],
+            ["LGBTQIA+", summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQIA+"] || 0],
+            ["Transgender", summarydata?.success?.pdls_based_on_gender?.Active?.["TRANSGENDER"] || 0],
             ["Total", (
                 (summarydata?.success?.pdls_based_on_gender?.Active?.Female || 0) +
-                (summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQ + LESBIAN / BISEXUAL"] || 0) +
-                (summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQ + TRANSGENDER"] || 0)
+                (summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQIA+"] || 0) +
+                (summarydata?.success?.pdls_based_on_gender?.Active?.["TRANSGENDER"] || 0)
             )]
         ];
 
@@ -522,18 +522,18 @@ const createStyledTable = (title, body) => {
                                             <td className="px-6 py-2 text-lg whitespace-nowrap">{summarydata?.success?.pdls_based_on_gender?.Active?.Female || 0}</td>
                                         </tr>
                                         <tr>
-                                            <td className="px-6 py-2 text-lg whitespace-nowrap border-r">Lesbian</td>
-                                            <td className="px-6 py-2 text-lg whitespace-nowrap">{summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQ + LESBIAN / BISEXUAL"] || 0}</td>
+                                            <td className="px-6 py-2 text-lg whitespace-nowrap border-r">LGBTQIA+</td>
+                                            <td className="px-6 py-2 text-lg whitespace-nowrap">{summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQIA+"] || 0}</td>
                                         </tr>
                                         <tr>
                                             <td className="px-6 py-2 text-lg whitespace-nowrap border-r">Transgender</td>
-                                            <td className="px-6 py-2 text-lg whitespace-nowrap">{summarydata?.success.pdls_based_on_gender?.Active?.["LGBTQ + TRANSGENDER"] || 0}</td>
+                                            <td className="px-6 py-2 text-lg whitespace-nowrap">{summarydata?.success.pdls_based_on_gender?.Active?.["TRANSGENDER"] || 0}</td>
                                         </tr>
                                         <tr>
                                             <td className="px-6 py-2 text-lg whitespace-nowrap border-r bg-gray-100 font-semibold">Total</td>
                                             <td className="px-6 py-2 text-lg whitespace-nowrap bg-gray-100 font-semibold">{summarydata?.success?.pdls_based_on_gender?.Active?.Female +
-                                                        summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQ + LESBIAN / BISEXUAL"] +
-                                                        summarydata?.success.pdls_based_on_gender?.Active?.["LGBTQ + TRANSGENDER"] || 0}</td>
+                                                        summarydata?.success?.pdls_based_on_gender?.Active?.["LGBTQIA+"] +
+                                                        summarydata?.success.pdls_based_on_gender?.Active?.["TRANSGENDER"] || 0}</td>
                                         </tr>
                                     </tbody>
                                     </table>

@@ -118,15 +118,15 @@ const typeValues = typeLabels.map(type => typeData[type]);
         };
 
         const genderData = {
-            labels: ['Male', 'Female', 'LGBTQ+'],
+            labels: ['Male', 'Female', 'LGBTQIA+'],
             datasets: [{
                 label: 'PDL Gender',
                 data: [
                     summarydata?.success.pdls_based_on_gender.Active.Male || 0,
                     summarydata?.success.pdls_based_on_gender.Active.Female || 0,
-                    (summarydata?.success.pdls_based_on_gender.Active["LGBTQ + TRANSGENDER"] || 0) +
+                    (summarydata?.success.pdls_based_on_gender.Active["TRANSGENDER"] || 0) +
                     (summarydata?.success.pdls_based_on_gender.Active["LGBTQ + GAY / BISEXUAL"] || 0) +
-                    (summarydata?.success.pdls_based_on_gender.Active["LGBTQ + LESBIAN / BISEXUAL"] || 0),
+                    (summarydata?.success.pdls_based_on_gender.Active["LGBTQIA+"] || 0),
                 ],
                 backgroundColor: ['#4A90E2', '#E94E77', '#F6BB42'],
                 borderColor: '#fff',
