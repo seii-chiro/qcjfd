@@ -776,10 +776,10 @@ const SummaryCount = () => {
       { "Visitor Type": "Minor", Total: minorVisitorCount },
       { "Visitor Type": "LGBTQIA+", Total: lgbtqiaVisitorCount },
       { "Visitor Type": "TRANSGENDER", Total: transgenderVisitorCount },
-      {
-        "Visitor Type": "LGBTQIA+",
-        Total: lgbtqiaCount,
-      },
+      // {
+      //   "Visitor Type": "LGBTQIA+",
+      //   Total: lgbtqiaCount,
+      // },
       {
         "Visitor Type": "Total",
         Total:
@@ -796,7 +796,7 @@ const SummaryCount = () => {
     const genderData = [
       { Gender: "Male", Total: maleCount },
       { Gender: "Female", Total: femaleCount },
-      { Gender: "LGBTQ + TRANSGENDER", Total: transgenderCount },
+      { Gender: "TRANSGENDER", Total: transgenderCount },
       { Gender: "LGBTQIA+", Total: lgbtqiaCount },
       //   { Gender: "LGBTQ + GAY / BISEXUAL", Total: gayCount },
       {
